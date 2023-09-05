@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G2xKriljmqih6tJLtZYntS0+gqvURKm+pmryqL9OzhVCTOU1FaWYisHayUZclLicoRh+aBGGzAOWPlacIiw2ag==",
+  "dgSpecHash": "MdFxo8mXT0ZuZu/R3VY/LdN730i+YwRi+qL/syaR9eAFqWGTPSTNn15k37FYHeN22DUYmn9ep1OF1bamELS88A==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj",
+  "projectFilePath": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Felix\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
