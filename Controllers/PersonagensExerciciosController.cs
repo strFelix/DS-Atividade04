@@ -57,7 +57,7 @@ namespace RpgApi.Controllers
         [HttpPost("ValidarMago")]
         public IActionResult ValidarMago(Personagem novoPersonagem){
             
-            if(novoPersonagem.Inteligencia < 35){
+            if(novoPersonagem.Classe == ClasseEnum.Mago && novoPersonagem.Classe == novoPersonagem.Inteligencia < 35){
                 return BadRequest("ERRO: O mago não pode ter menos que 35 de int.");
             }
             else{
@@ -70,8 +70,14 @@ namespace RpgApi.Controllers
         //D - Get Clerigos e Magos
         [HttpGet("ClerigoMago")]
         public IActionResult ClerigoMago(){
-            personagens.RemoveAll(pers => pers.Classe ==  ClasseEnum.Cavaleiro);
-            return Ok(personagens.OrderByDescending(pers => pers.PontosVida));
+            // personagens.RemoveAll(pers => pers.Classe ==  ClasseEnum.Cavaleiro);
+            // return Ok(personagens.OrderByDescending(pers => pers.PontosVida));
+
+            List<Personagem> RemoveCavaleiro = personagens.FindAll(p => p.Classe != ClasseEnum.Cavaleiro);
+
+            List<Personagem> OrdenadoPontosVida = RemoveCavaleiro.OrderByDescending(x => x.PontosVida).ToList();
+
+            return Ok(OrdenadoPontosVida);  
         }
 
         //E - Qunatidade de personagens e somatória da inteligência
