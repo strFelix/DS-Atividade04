@@ -109,6 +109,12 @@ namespace RpgApi.Controllers
             else{
                 return BadRequest("ERRO: Código de classe não existente");
             }
+
+            // ClasseEnum tipoEnum = (ClasseEnum)classeId;
+
+            // List<Personagem> listaClasse = personagens.FindAll(p => p.Classe.Equals(tipoEnum));
+            // List<Personagem> listaClasse = personagens.FindAll(p => p.Classe == tipoEnum);
+            // return Ok(listaClasse);
         }
     }
 }
