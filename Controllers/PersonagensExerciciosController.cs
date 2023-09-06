@@ -57,7 +57,7 @@ namespace RpgApi.Controllers
         [HttpPost("ValidarMago")]
         public IActionResult ValidarMago(Personagem novoPersonagem){
             
-            if(novoPersonagem.Classe == ClasseEnum.Mago && novoPersonagem.Classe == novoPersonagem.Inteligencia < 35){
+            if(novoPersonagem.Classe == ClasseEnum.Mago && novoPersonagem.Inteligencia < 35){
                 return BadRequest("ERRO: O mago não pode ter menos que 35 de int.");
             }
             else{

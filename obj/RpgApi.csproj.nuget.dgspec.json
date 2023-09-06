@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj": {}
+    "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\RpgApi\\RpgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj": {
+    "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\RpgApi\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj",
+        "projectUniqueName": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\RpgApi\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\RpgApi.csproj",
+        "projectPath": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\RpgApi\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\Felix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\Aula04API\\RpgApi\\obj\\",
+        "outputPath": "C:\\Users\\Felix\\Desktop\\Projetos\\ETEC\\2Semestre\\DS\\Atividade04\\RpgApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Felix\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
