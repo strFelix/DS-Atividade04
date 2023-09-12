@@ -1,0 +1,6 @@
+CONEXÃO COM O SERVIDOR WEB
+"ConexaoSomee":"Data Source=DB-DS-AnaEduLucas.mssql.somee.com; Initial Catalog=DB-DS-ANAEDULUCAS; User Id=AnaEduLucas; Password=12345678;TrustServerCertificate=True"
+
+CONEXÃO LOCAL COM O SQL SERVER
+"ConexaoLocal":"Data Source=localhost; Initial Catalog=DB-DS-ANAEDULUCAS; User Id=sa; Password=123456;TrustServerCertificate=True"
+
