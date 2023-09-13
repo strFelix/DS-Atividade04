@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using RpgApi.Models;
-using RpgApi.Models.Enuns;
 using RpgApi.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +19,6 @@ namespace DS_Atividade04.Controllers
         public async Task<IActionResult> GetSingle(int id){
             try{
                 Personagem p = await _context.TB_PERSONAGENS.FirstOrDefaultAsync(pBusca => pBusca.Id == id);
-                
                 return Ok(p);
             }
             catch (System.Exception ex){
@@ -43,7 +41,7 @@ namespace DS_Atividade04.Controllers
         public async Task<IActionResult> Add(Personagem novoPersonagem){
             try{
                 if(novoPersonagem.PontosVida > 100){
-                    throw new Exception("Pontos de vida não pode ser maio que 100");
+                    throw new Exception("Pontos de vida não podem ser maior que 100");
                 }
                 await _context.TB_PERSONAGENS.AddAsync(novoPersonagem);
                 await _context.SaveChangesAsync();
@@ -64,7 +62,7 @@ namespace DS_Atividade04.Controllers
                 }
                 _context.TB_PERSONAGENS.Update(novoPersonagem);
                 int linhasAfetadas = await _context.SaveChangesAsync();
-
+            
                 return Ok(linhasAfetadas);
             }
             catch(System.Exception ex){
