@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\Aula04API\\AtividadeLucas\\DS-Atividade04\\RpgApi.csproj": {}
+    "D:\\PastaLocal\\DS-Atividade04\\RpgApi.csproj": {}
   },
   "projects": {
-    "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\Aula04API\\AtividadeLucas\\DS-Atividade04\\RpgApi.csproj": {
+    "D:\\PastaLocal\\DS-Atividade04\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\Aula04API\\AtividadeLucas\\DS-Atividade04\\RpgApi.csproj",
+        "projectUniqueName": "D:\\PastaLocal\\DS-Atividade04\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\Aula04API\\AtividadeLucas\\DS-Atividade04\\RpgApi.csproj",
+        "projectPath": "D:\\PastaLocal\\DS-Atividade04\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\Aula04API\\AtividadeLucas\\DS-Atividade04\\obj\\",
+        "outputPath": "D:\\PastaLocal\\DS-Atividade04\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
