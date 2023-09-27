@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R/yOViNbreynK9/f6rDvUdyvyCMZjtzpinrNiryMunWcKeOJPYa7bZY2g+S9KZRgBOUdX59oSes0ewp5HQH+UQ==",
+  "dgSpecHash": "L312JtXLDGGhDfDfZI6mMC/Co9+N2SqMTZOUCEIXLjPxzlmoqH5ZrPqkyF0ebzPg59hvU3OV4qkRTdu1zpfl/w==",
   "success": true,
-  "projectFilePath": "D:\\PastaLocal\\DS-Atividade04\\RpgApi.csproj",
+  "projectFilePath": "D:\\PastaLocal\\Aulas - Ana Edu Lucas\\DS - Desenvolvimento de sistemas\\RpgApi\\RpgApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etechas\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\etechas\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

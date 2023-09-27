@@ -1,6 +1,7 @@
 using RpgApi.Models;
 using RpgApi.Models.Enuns;
 using Microsoft.EntityFrameworkCore;
+using RpgApi.Utils;
 
 namespace RpgApi.Data
 {
@@ -12,6 +13,7 @@ namespace RpgApi.Data
         
         public DbSet<Personagem> TB_PERSONAGENS {get; set;}
         public DbSet<Armas> TB_ARMAS {get; set;}
+        public DbSet<Usuario> TB_USUARIOS {get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,14 +29,42 @@ namespace RpgApi.Data
             );
 
             modelBuilder.Entity<Armas>().HasData(
-            new Armas() { Id = 1, Nome = "Arma1", Dano = 10},
-            new Armas() { Id = 2, Nome = "Arma2", Dano = 20},
-            new Armas() { Id = 3, Nome = "Arma3", Dano = 30},
-            new Armas() { Id = 4, Nome = "Arma4", Dano = 40},
-            new Armas() { Id = 5, Nome = "Arma5", Dano = 50},
-            new Armas() { Id = 6, Nome = "Arma6", Dano = 60},
-            new Armas() { Id = 7, Nome = "Arma7", Dano = 70}
+            new Armas() { Id = 1, Nome = "Espada", Dano = 15, PersonagemId = 1},
+            new Armas() { Id = 2, Nome = "Espada Pesada", Dano = 25, PersonagemId = 2},
+            new Armas() { Id = 3, Nome = "Machado", Dano = 20, PersonagemId = 3},
+            new Armas() { Id = 4, Nome = "Machado Pesado", Dano = 30, PersonagemId = 4},
+            new Armas() { Id = 5, Nome = "Massa", Dano = 17, PersonagemId = 5},
+            new Armas() { Id = 6, Nome = "Massa Pesada", Dano = 28, PersonagemId = 6},
+            new Armas() { Id = 7, Nome = "Adaga", Dano = 10, PersonagemId = 7}
+            // new Armas() { Id = 8, Nome = "Garras", Dano = 8 },
+            // new Armas() { Id = 9, Nome = "Cajado", Dano = 15 },
+            // new Armas() { Id = 10, Nome = "Talismã", Dano = 15},
+            // new Armas() { Id = 11, Nome = "Arco", Dano = 10},
+            // new Armas() { Id = 12, Nome = "Besta", Dano = 13},
+            // new Armas() { Id = 13, Nome = "Arco Composto", Dano = 15},
+            // new Armas() { Id = 14, Nome = "Lança", Dano = 14},
+            // new Armas() { Id = 15, Nome = "Escudo", Dano = 5}
             );
+
+            // modelBuilder.Entity<PersonagemHabilidade>().HasData
+            //Início da criação do usuário padrão.
+            Usuario user = new Usuario();
+            Criptografia.CriarPasswordHash("123456", out byte[] hash, out byte[]salt);
+            user.Id = 1;
+            user.Username = "UsuarioAdmin";
+            user.PasswordString = string.Empty;
+            user.PasswordHash = hash;
+            user.PasswordSalt = salt;
+            user.Perfil = "Admin";
+            user.Email = "seuEmail@gmail.com";
+            user.Latitude = -23.5200241;
+            user.Longitude = -46.596498;
+            
+            //Fim da criação do usuário padrão.
+            modelBuilder.Entity<Usuario>().HasData(user);            
+
+            //Define que se o Perfil não for informado, o valor padrão será jogador
+            modelBuilder.Entity<Usuario>().Property(u => u.Perfil).HasDefaultValue("Jogador");
         }
     }
 }
