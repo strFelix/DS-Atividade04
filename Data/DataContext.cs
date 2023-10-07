@@ -36,6 +36,7 @@ namespace RpgApi.Data
             new Armas() { Id = 5, Nome = "Massa", Dano = 17, PersonagemId = 5},
             new Armas() { Id = 6, Nome = "Massa Pesada", Dano = 28, PersonagemId = 6},
             new Armas() { Id = 7, Nome = "Adaga", Dano = 10, PersonagemId = 7}
+            //SEM ATRIBUIÇÃO DE PERSONAGENS BANCO DEFINI COMO ID 1, ERRO POR SER PK E REPITIR ID
             // new Armas() { Id = 8, Nome = "Garras", Dano = 8 },
             // new Armas() { Id = 9, Nome = "Cajado", Dano = 15 },
             // new Armas() { Id = 10, Nome = "Talismã", Dano = 15},
